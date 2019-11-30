@@ -58,6 +58,7 @@ public class AlarmsFragment extends Fragment {
                         SharedPreferences.Editor editor = preferences.edit();
                         editor.putInt("hour", hour);
                         editor.putInt("minute", minute);
+                        editor.putBoolean("toggleOn", true);
                         editor.apply();
                     }
                     setAlarm(hour, minute);
@@ -71,6 +72,13 @@ public class AlarmsFragment extends Fragment {
                         alarmManager.cancel(alarmIntent);
                         Toast.makeText(getContext(), "Alarm Canceled", Toast.LENGTH_SHORT).show();
                         Log.d("AlarmsFragment", "Alarm canceled");
+                    }
+                    // Update the toggle option
+                    if (getActivity() != null) {
+                        SharedPreferences preferences = getActivity().getPreferences(Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = preferences.edit();
+                        editor.putBoolean("toggleOn", false);
+                        editor.apply();
                     }
                 }
             }
@@ -106,6 +114,8 @@ public class AlarmsFragment extends Fragment {
                 timePicker.setHour(preferences.getInt("hour", -1));
                 timePicker.setMinute(preferences.getInt("minute", -1));
             }
+            // Also set toggle
+            toggleButton.setChecked(preferences.getBoolean("toggleOn", false));
         }
     }
 
