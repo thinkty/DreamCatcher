@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_alarms"
+        android:icon="@drawable/clock"
+        android:title="@string/alarms" />
+
+    <item
+        android:id="@+id/navigation_write"
+        android:icon="@drawable/write"
+        android:title="@string/write" />
+
+    <item
+        android:id="@+id/navigation_notes"
+        android:icon="@drawable/notes"
+        android:title="@string/notes" />
+
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DreamCatcher</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="alarms">Alarms</string>
+    <string name="write">Write</string>
+    <string name="stories">Stories</string>
+    <string name="notes">Notes</string>
+    <string name="hint_on_notes">Notes..</string>
+    <string name="add_new_note">Add new note</string>
+    <string name="title">Title..</string>
+</resources>

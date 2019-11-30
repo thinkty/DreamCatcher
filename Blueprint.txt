@@ -1,0 +1,7 @@
+An android app to manually record dreams
+
+- Not only dreams, but thoughts too. Many good ideas come in the morning
+- Can it record how much the user is sleeping, automatically?
+- Voice record would be nice too
+- How can it ask the user for the dream they had in the morning?
+- Calculate data into useful information
