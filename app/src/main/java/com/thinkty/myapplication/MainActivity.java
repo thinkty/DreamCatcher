@@ -1,13 +1,16 @@
 package com.thinkty.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.thinkty.myapplication.ui.alarm.AlarmReceiver;
+import com.thinkty.myapplication.ui.alarm.AlarmService;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,4 +29,18 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (AlarmReceiver.ringtone != null && AlarmReceiver.ringtone.isPlaying()) {
+            // Stop the ringtone
+            AlarmReceiver.ringtone.stop();
+            Log.d("MainActivity", "Alarm ringtone stopped");
+            // Stop the service
+            Intent intent = new Intent(getApplicationContext(), AlarmService.class);
+            intent.addCategory(AlarmService.TAG);
+            stopService(intent);
+        }
+    }
 }

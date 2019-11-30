@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_alarms"
-        android:name="com.thinkty.myapplication.ui.home.AlarmsFragment"
+        android:name="com.thinkty.myapplication.ui.alarm.AlarmsFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_alarms" />
 
     <fragment
         android:id="@+id/navigation_write"
-        android:name="com.thinkty.myapplication.ui.dashboard.WriteFragment"
+        android:name="com.thinkty.myapplication.ui.write.WriteFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_write" />
 
     <fragment
         android:id="@+id/navigation_notes"
-        android:name="com.thinkty.myapplication.ui.notifications.StoriesFragment"
+        android:name="com.thinkty.myapplication.ui.stories.StoriesFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notes" />
 </navigation>

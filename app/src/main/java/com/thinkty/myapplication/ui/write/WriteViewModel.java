@@ -1,4 +1,4 @@
-package com.thinkty.myapplication.ui.dashboard;
+package com.thinkty.myapplication.ui.write;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

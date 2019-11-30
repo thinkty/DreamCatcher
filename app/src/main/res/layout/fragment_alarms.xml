@@ -7,14 +7,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#E8C2C2C2">
 
         <TimePicker
             android:id="@+id/time_picker"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:numbersBackgroundColor="#000000"
+            android:numbersSelectorColor="#8AFFFFFF"
+            android:numbersTextColor="#FFF" />
 
-        
+        <ToggleButton
+            android:id="@+id/alarmToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

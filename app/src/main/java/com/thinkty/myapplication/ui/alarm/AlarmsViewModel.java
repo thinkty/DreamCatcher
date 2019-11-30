@@ -1,4 +1,4 @@
-package com.thinkty.myapplication.ui.home;
+package com.thinkty.myapplication.ui.alarm;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

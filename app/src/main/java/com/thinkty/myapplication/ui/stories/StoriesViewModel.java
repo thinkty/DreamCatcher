@@ -1,4 +1,4 @@
-package com.thinkty.myapplication.ui.notifications;
+package com.thinkty.myapplication.ui.stories;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
